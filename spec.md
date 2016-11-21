@@ -15,8 +15,19 @@ seriously. It also helps you from getting rusty!
   - Track side project work you're doing with Github (commits)
   - Connect your Twitter account to track and send tweets
   - Connect your LinkedIn account to send out status update
+  - Connect Github (Oauth)
   - Manage potential hiring companies
   - Manage network connections 
+
+
+# Architecture
+
+  - Rails for generating API endpoints, queried by a front end framework?
+  - Multiple angular views and subviews for rendering pages? Maybe React instead?
+  - Devise for authentication
+  - Investigate AJAX through Rails
+  - Postgres for database, eventual deployment on Heroku
+  - 
 
 
 # Models, Attributes, Behaviors, and Relationships
@@ -127,7 +138,35 @@ seriously. It also helps you from getting rusty!
     - date
     - title
 
-    
+
+
+  # Views
+
+    # Dashboard
+      - Open jobs
+        - by status
+      - Blog post completed for week?
+      - Github Commits done for the week?
+      - quick log feature
+
+    # Profile
+      - edit account info
+
+    # Contacts
+      - index and individual contact views
+
+    # Companies
+      - index and indidivudal company views
+
+    # Jobs
+      - index and individual job views
+
+    # JobAction
+      - recent activity (index)
+      - CRUD for job actions
+
+
+
 
 
 

@@ -5,3 +5,27 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+@matt = User.create(name: "Matt", username: "cassaram09", password: "hello123", email: "matt@matt.com")
+
+@joe = Contact.create(name: "Joe Pisciotta", email: "joe@redhat.com", job_title: "Platform Consultant", job_description: "does OS and platfomr things",
+                connection_degree: "First", connection_strength: "Moderate" )
+
+@redhat = Company.create(name: "Redhat", industry: "Cloud Hosting", size: "Large", website: "http://www.redhat.com")
+
+@web_developer = Job.create(job_title: "Web Developer", job_description: "front end web developer")
+
+@meet = JobAction.create()
+
+@joe.company = @redhat
+@joe.user = @matt
+@joe.save
+
+@redhat.user = @matt 
+@redhat.jobs << @web_developer
+@redhat.save
+
+@web_developer.referrer = @joe 
+@web_developer.save
+
+

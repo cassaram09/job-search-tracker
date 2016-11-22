@@ -27,7 +27,7 @@ seriously. It also helps you from getting rusty!
   - Devise for authentication
   - Investigate AJAX through Rails
   - Postgres for database, eventual deployment on Heroku
-  - 
+  -
 
 
 # Models, Attributes, Behaviors, and Relationships

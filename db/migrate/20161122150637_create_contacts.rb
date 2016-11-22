@@ -11,6 +11,7 @@ class CreateContacts < ActiveRecord::Migration[5.0]
       t.integer :connection_degree
       t.integer :connection_strength
       t.belongs_to :company
+      t.belongs_to :user
       t.timestamps
     end
   end

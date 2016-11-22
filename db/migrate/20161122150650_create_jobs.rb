@@ -7,7 +7,8 @@ class CreateJobs < ActiveRecord::Migration[5.0]
       t.belongs_to :company
       t.belongs_to :contact
       t.string :status
-      
+      t.belongs_to :user
+
       t.timestamps
     end
   end

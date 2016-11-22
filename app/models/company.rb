@@ -3,5 +3,5 @@ class Company < ApplicationRecord
   has_many :jobs
   belongs_to :user
 
-  enum size: [:small, :medium, :large]
+  enum size: ["Small", "Medium", "Large"]
 end

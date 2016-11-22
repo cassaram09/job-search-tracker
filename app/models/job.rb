@@ -4,7 +4,7 @@ class Job < ApplicationRecord
 
   enum status: ['Send Resume and Cover Letter',
       'Initial Response/Contact from Company',
-      'First Interview Scheduled (phone'),
+      'First Interview Scheduled (phone)',
       'First Interview Scheduled (in-person)',
       'First Interview Completed (phone)',
       'First Interview Completed (in-person)',

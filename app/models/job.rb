@@ -1,6 +1,7 @@
 class Job < ApplicationRecord
   belongs_to :company
   belongs_to :referrer, class_name: "Contact"
+  belongs_to :user
 
   enum status: ['Send Resume and Cover Letter',
       'Initial Response/Contact from Company',
